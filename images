@@ -1,0 +1,133 @@
+images
+"https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap";
+ 
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4f0e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('images/fond défilé.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.brand-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.brand-logo:hover {
+    transform: scale(1.1);
+}
+
+#subscribe {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #474442;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+#subscribe h2 {
+    margin-bottom: 20px;
+}
+
+#subscribe input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#subscribe button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #746256;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#subscribe button:hover {
+    background-color: #e5e5e5;
+}
